@@ -3,7 +3,6 @@ import Chats from "../database/database.js";
 
 const router = new express.Router();
 
-
 // Handeling CURD operation.
 router.get("/", (req, res) => {
     res.send("<h2>These are some routes</h2>");
