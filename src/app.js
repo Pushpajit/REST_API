@@ -1,10 +1,13 @@
 import chalk from "chalk";
 import express from "express";
 import router from "./router/CURD.js"
+import dotenv from "dotenv";
+
+// config the path
+dotenv.config( { path: "./config.env" } )
 
 
-// dotenv.config( )
-const PORT = 3300;
+const PORT = process.env.PORT || 3300;
 
 // Setting up app back-end
 const app = express();
