@@ -23,7 +23,7 @@ res.setHeader('Access-Control-Allow-Credentials', true);
 next();
 });
 
-app.use(express.static('../public'));
+app.use(express.static('public'));
 app.use(express.json());
 app.use(router);
 
